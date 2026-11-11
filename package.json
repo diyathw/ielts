@@ -1,0 +1,38 @@
+{
+  "name": "ielts-essay-marker",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "npm run build && node server/dist/main.js",
+    "server": "npm run build && node server/dist/main.js",
+    "build:server": "tsc -p server/tsconfig.json",
+    "build": "tsc --noEmit && npm run build:server && vite build --configLoader runner",
+    "check": "tsc --noEmit && npm run build:server",
+    "test": "npm run build:server && node --test server/scoring.test.cjs",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@nestjs/common": "11.1.28",
+    "@nestjs/core": "11.1.28",
+    "@nestjs/platform-express": "11.1.28",
+    "@radix-ui/react-slot": "1.2.5",
+    "class-variance-authority": "0.7.1",
+    "clsx": "2.1.1",
+    "lucide-react": "0.468.0",
+    "react": "19.2.6",
+    "react-dom": "19.2.6",
+    "reflect-metadata": "0.2.2",
+    "rxjs": "7.8.2",
+    "tailwind-merge": "3.6.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "4.3.3",
+    "@types/node": "^24.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "tailwindcss": "4.3.3",
+    "typescript": "5.9.3",
+    "vite": "7.3.7"
+  }
+}

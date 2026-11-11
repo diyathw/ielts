@@ -1,0 +1,38 @@
+{
+  "type": "object",
+  "properties": {
+    "summary": { "type": "string" },
+    "criteria": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": { "type": "string" },
+          "band": { "type": "number" },
+          "reason": { "type": "string" }
+        },
+        "required": ["name", "band", "reason"],
+        "additionalProperties": false
+      }
+    },
+    "strengths": { "type": "array", "items": { "type": "string" } },
+    "improvements": { "type": "array", "items": { "type": "string" } },
+    "nextStep": { "type": "string" },
+    "annotations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "quote": { "type": "string" },
+          "category": { "type": "string", "enum": ["Grammar", "Spelling", "Word choice", "Punctuation", "Clarity"] },
+          "replacement": { "type": "string" },
+          "explanation": { "type": "string" }
+        },
+        "required": ["quote", "category", "replacement", "explanation"],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": ["summary", "criteria", "strengths", "improvements", "nextStep", "annotations"],
+  "additionalProperties": false
+}
