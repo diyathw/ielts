@@ -2,3 +2,6 @@ node_modules
 dist
 .DS_Store
 *.log
+benchmarks/latest-report.json
+.env
+.env.*

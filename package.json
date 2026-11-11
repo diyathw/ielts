@@ -10,6 +10,7 @@
     "build": "tsc --noEmit && npm run build:server && vite build --configLoader runner",
     "check": "tsc --noEmit && npm run build:server",
     "test": "npm run build:server && node --test server/scoring.test.cjs",
+    "benchmark": "npm run build:server && node scripts/benchmark.cjs",
     "preview": "vite preview"
   },
   "dependencies": {

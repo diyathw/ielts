@@ -1,5 +1,7 @@
 # General Training Writing marking notes
 
+These notes are for human review and offline evaluation. The live marker reads the project skill and the student's prompt and essay; it does not receive sample examiner labels or these notes.
+
 Source: `ielts-general-training-writing-sample-tasks-2023.pdf` (IELTS.org, 2023), converted to searchable text in `docs/ielts-general-training-writing-sample-tasks-2023.txt`.
 
 Use these examiner examples as calibration anchors, not fixed answers. The PDF warns that there are many ways to achieve a band and its sample scripts are not definitive models.
